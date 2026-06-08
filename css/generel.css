@@ -1,0 +1,152 @@
+p {
+  font-weight: 200;
+}
+h1 {
+  font-weight: 500;
+}
+h2 {
+  font-weight: 300;
+}
+h3 {
+  font-weight: 200;
+}
+a {
+  text-decoration: none;
+  text-decoration: underline;
+  color: black;
+}
+figcaption {
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: #777;
+}
+
+.logo {
+  width: 20%;
+  height: auto;
+}
+
+.navn {
+  width: 50%;
+  height: auto;
+}
+
+.cirkel {
+  width: 5%;
+  height: auto;
+}
+
+main {
+  padding: clamp(2rem, 4vw, 5rem);
+}
+
+body {
+  background-color: #b9b89a;
+
+  font-family: "Inter", sans-serif;
+}
+
+.kontakt_background {
+  background-color: #6095e3;
+}
+
+header {
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 10rem;
+}
+
+footer :last-child {
+  justify-self: end;
+}
+
+/* MENU */
+
+.burger {
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 2000; /* højere end menuens */
+}
+
+#menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50vw; /* Halvdelen af skærmen */
+  height: 100vh; /* Hele højden */
+
+  background: rgb(185 184 154 / 90%); /* baggrundsfarve med opacity */
+
+  padding: 120px 40px 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  opacity: 0;
+  transform: translateX(100%); /* Starter udenfor skærmen */
+  pointer-events: none;
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+
+  box-shadow: -5px 0 20px rgba(0, 0, 0, 0.2);
+
+  z-index: 1000;
+}
+
+#menu li {
+  border-bottom: 1px solid black;
+  padding-bottom: 15px;
+}
+
+#menu a {
+  color: black;
+  text-decoration: none;
+  padding: 10px 0;
+  display: block;
+  font-size: clamp(2rem, 5vw, 5rem); /* minimum 2rem, skalere med skærmen 5vw, max 5rem */
+  font-weight: 200;
+}
+
+/* Når menuen er åben */
+#menu.active {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* subhead/undermenuer */
+
+.submenu {
+  padding-left: 2rem;
+}
+
+#menu.open .submenu {
+  display: block;
+}
+
+#menu .submenu a {
+  font-size: 0.89rem;
+}
+
+#menu .submenu li {
+  padding-bottom: 7px;
+  border-bottom: 1px solid #ff6634;
+}

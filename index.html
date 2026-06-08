@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forside</title>
+    <link rel="stylesheet" href="css/generel.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html"> <img src="SVG/Asset 6.svg" alt="logo" /></a>
+      <img src="SVG/logofinal.svg" alt="navn" class="navn" />
+      <div class="burger" id="burger" onclick="toggleMenu()">☰</div>
+      <nav id="menu">
+        <ul>
+          <li><a href="kontakt.html">OM MIG</a></li>
+          <li class="over-subhead">
+            <a href="#">PROJEKTER</a>
+
+            <ul class="submenu">
+              <li><a href="tema1.html">Tema 1</a></li>
+              <li><a href="tema2.html">Tema 2</a></li>
+              <li><a href="tema3.html">Tema 3</a></li>
+              <li><a href="tema4.html">Tema 4</a></li>
+              <li><a href="tema5.html">Tema 5</a></li>
+            </ul>
+          </li>
+          <li><a href="kontakt.html">KONTAKT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <img src="SVG/cirkel.svg" alt="cirkel" class="hero-cirkel" />
+        <p class="hero-text">Researchdrevet multimediedesigner med fokus på konceptudvikling og digital realisering.</p>
+        <a href="kontakt.html" class="info-cta">UDDYB</a>
+      </div>
+
+      <div class="projekter_intro">
+        <img src="SVG/femprik.svg" alt="femprik" class="femprik" />
+        <h1>PROJEKTER</h1>
+        <p>Dyk ned i de forskellige temaer jeg har været igennem på første semester på multimediedesign</p>
+      </div>
+
+      <div class="projekter">
+        <a href="tema1.html"><img src="SVG/tema1.svg" alt="tema1" /></a>
+
+        <a href="tema2.html"><img src="SVG/tema2.svg" alt="tema2" /></a>
+        <a href="tema3.html"><img src="SVG/tema3.svg" alt="tema3" /></a>
+        <a href="tema4.html"><img src="SVG/tema4.svg" alt="tema4" /></a>
+        <a href="tema5.html"><img src="SVG/tema5.svg" alt="" /></a>
+      </div>
+
+      <form class="kontakt-formular" action="#" method="post">
+        <h1>KONTAKT MIG</h1>
+        <input type="text" name="navn" placeholder="Navn" required />
+
+        <input type="email" name="email" placeholder="E-mail" required />
+
+        <input type="text" name="virksomhed" placeholder="Virksomhed" />
+
+        <textarea name="besked" placeholder="Skriv din besked her..." rows="6" required></textarea>
+
+        <button type="submit">SEND</button>
+      </form>
+    </main>
+    <script src="js/script.js"></script>
+    <footer>
+      <a href="kontakt.html">KONTAKT MIG</a>
+      <img src="SVG/cirkel.svg" alt="cirkel" class="cirkel" />
+    </footer>
+  </body>
+</html>

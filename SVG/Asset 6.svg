@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135.12 135.12">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fef8e0;
+      }
+
+      .cls-2 {
+        fill: #f0ede8;
+      }
+    </style>
+  </defs>
+  <g id="firkant_1" data-name="firkant 1">
+    <g>
+      <rect class="cls-2" x="41.56" width="93.55" height="93.55"/>
+      <circle class="cls-1" cx="41.56" cy="93.55" r="41.56"/>
+      <circle cx="83.13" cy="79.64" r="27.65"/>
+    </g>
+  </g>
+</svg>

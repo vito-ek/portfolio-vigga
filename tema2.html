@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forside</title>
+    <link rel="stylesheet" href="css/generel.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html"> <img src="SVG/Asset 6.svg" alt="logo" /></a>
+      <img src="SVG/logofinal.svg" alt="navn" class="navn" />
+      <div class="burger" id="burger" onclick="toggleMenu()">☰</div>
+      <nav id="menu">
+        <ul>
+          <li><a href="kontakt.html">OM MIG</a></li>
+          <li class="over-subhead">
+            <a href="#">PROJEKTER</a>
+
+            <ul class="submenu">
+              <li><a href="tema1.html">Tema 1</a></li>
+              <li><a href="tema2.html">Tema 2</a></li>
+              <li><a href="tema3.html">Tema 3</a></li>
+              <li><a href="tema4.html">Tema 4</a></li>
+              <li><a href="tema5.html">Tema 5</a></li>
+            </ul>
+          </li>
+          <li><a href="kontakt.html">KONTAKT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main_projekter">
+      <h1>TEMA 2</h1>
+      <h3>GRUNDLÆGGENDE WEB</h3>
+
+      <div class="grid_1">
+        <div>
+          <p>
+            I dette tema fik vi en introduktion til de grundlæggende principper inden for webudvikling og digitalt design. Vi arbejdede med centrale begreber inden for digitale brugergrænseflader, digital kommunikation, indholdsproduktion og
+            responsivt webdesign med fokus på en mobile first-tilgang.
+          </p>
+
+          <p>Vi lærte at opbygge websites ved hjælp af HTML og CSS og fik vores første praktiske erfaring med strukturering af webindhold.</p>
+          <p>Derudover arbejdede vi med grundlæggende billedbehandling, grafik og opsætning af tekst og visuelle elementer i Figma. Som en del af designforståelsen blev vi også introduceret til gestaltlovene og gængse designkonventioner.</p>
+        </div>
+      </div>
+
+      <div class="grid_1-1">
+        <div>
+          <h3>1. opgave: mobilsite</h3>
+          <p>I denne opgave udviklede vi den første version af et website med fokus på struktur og opbygning. Vi skulle kode en grundlæggende hjemmeside med flere undersider og en navigationsmenu.</p>
+          <p>STil opgaven fik vi udleveret wireframes, layoutdiagrammer samt alt nødvendigt indhold i form af tekst og billeder. Derfor var fokus primært på at omsætte designet til kode og følge de udleverede retningslinjer så præcist som muligt.</p>
+          <p>
+            Projektet gav en grundlæggende forståelse for HTML og CSS, mappestruktur samt samspillet mellem layoutdiagrammer, wireframes og den færdige webside. Samtidig fik vi erfaring med at opbygge responsive layouts og arbejde systematisk med
+            webudvikling fra design til kode.
+          </p>
+          <div>
+            <img src="img/wireframe-tema2.png" alt="wireframe" class="billede-projekter" />
+            <figcaption>Udleveret wireframe</figcaption>
+          </div>
+        </div>
+        <div>
+          <h3>2. opgave: Desktop</h3>
+          <p>Som en videreudvikling af mobilsite-opgaven skulle vi tilpasse websitet, så det fungerede på både mobil og desktop. Opgaven tog udgangspunkt i det eksisterende site, som nu skulle gøres responsivt og tilpasses større skærmstørrelser.</p>
+          <p>
+            Ligesom i den første opgave arbejdede vi ud fra udleverede wireframes og layoutdiagrammer, som dannede grundlag for struktur og design. Fokus var derfor på at implementere layoutet korrekt i kode og sikre, at websitet fungerede på tværs
+            af forskellige enheder.
+          </p>
+
+          <p>
+            Projektet introducerede os til arbejdet med responsive layouts og media queries samt betydningen af at organisere CSS-filer på en overskuelig måde. Derudover arbejdede vi med typografi og farvevalg for at skabe en tydelig visuel
+            identitet.
+          </p>
+
+          <h3>Krav til opgave:</h3>
+          <ul class="koncept-li">
+            <li><p>Anvendelse af mindst to forskellige skrifttyper.</p></li>
+            <li><p>Brug af et gennemgående farvevalg i designet.</p></li>
+            <li><p>Opdeling af CSS i to separate filer (generel.css og layout.css).</p></li>
+            <li><p>Validering af HTML-koden uden fejl.</p></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid_1-1">
+        <div class="mobilversion">
+          <img src="img/mobilsite.png" alt="Mobilsite" />
+        </div>
+
+        <div>
+          <img src="img/forside_com.png" alt="Forside" class="billede-projekter" />
+          <div class="kode-billeder">
+            <figure>
+              <img src="img/html-kode-stats.png" alt="HTML-kode" />
+              <figcaption>HTML</figcaption>
+            </figure>
+
+            <figure>
+              <img src="img/css-kode-stats.png" alt="CSS-kode" />
+              <figcaption>CSS</figcaption>
+            </figure>
+          </div>
+          <p>
+            Her ses HTML- og CSS-koden for opsætningen af stats-sektionen. Jeg har placeret alle statistikkerne i en dl med klassen .dl_grid_1-1, som er sat op som et CSS Grid med to lige brede kolonner (1fr 1fr). Hver statistik er samlet i en div,
+            som indeholder både et dt (betegnelse) og et dd (værdi).
+          </p>
+          <p>Da dt og dd ligger i samme div, bliver de holdt samlet og placeret i den samme grid-celle. Resultatet er, at statistikkerne vises i et overskueligt layout med to kolonner, hvor hver betegnelse står over sin tilhørende værdi.</p>
+          <p>Derudover er der anvendt gap til at skabe afstand mellem elementerne, mens padding og margin bruges til at justere afstanden mellem overskrifter og værdier.</p>
+        </div>
+      </div>
+      <div class="grid_1-1">
+        <div class="mobilversion">
+          <img src="img/opera-mobil.png" alt="Operativsystemer" />
+        </div>
+
+        <div>
+          <img src="img/opera-web.png" alt="Operativsystemer" class="billede-projekter" />
+          <div class="kode-billeder">
+            <figure>
+              <img src="img/opera-kode-html.png" alt="HTML-kode" />
+              <figcaption>HTML</figcaption>
+            </figure>
+
+            <figure>
+              <img src="img/opera-kode-css.png" alt="CSS-kode" />
+              <figcaption>CSS</figcaption>
+            </figure>
+          </div>
+          <p>Jeg opbyggede sektionen med et overordnet grid på 5fr 3fr og anvendte derefter undergrids på 2fr 3fr og 3fr 2fr. Dette gjorde jeg for at følge layoutdiagrammet og skabe en varieret, men struktureret opbygning af indholdet.</p>
+        </div>
+      </div>
+
+      <div class="grid_1-1">
+        <div>
+          <h1>Løsning</h1>
+          <p>Du kan se min færdige løsning her:</p>
+          <a href="https://vito-ek.github.io/WebsiteOpgaveVigga/" target="_blank"> Se projekt </a>
+        </div>
+        <div><img src="SVG/Asset 6.svg" alt="" /></div>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+    <footer>
+      <a href="kontakt.html">KONTAKT MIG</a>
+      <img src="SVG/cirkel.svg" alt="cirkel" class="cirkel" />
+    </footer>
+  </body>
+</html>

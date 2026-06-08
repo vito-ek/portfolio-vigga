@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forside</title>
+    <link rel="stylesheet" href="css/generel.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html"> <img src="SVG/Asset 6.svg" alt="logo" /></a>
+      <img src="SVG/logofinal.svg" alt="navn" class="navn" />
+      <div class="burger" id="burger" onclick="toggleMenu()">☰</div>
+      <nav id="menu">
+        <ul>
+          <li><a href="kontakt.html">OM MIG</a></li>
+          <li class="over-subhead">
+            <a href="#">PROJEKTER</a>
+
+            <ul class="submenu">
+              <li><a href="tema1.html">Tema 1</a></li>
+              <li><a href="tema2.html">Tema 2</a></li>
+              <li><a href="tema3.html">Tema 3</a></li>
+              <li><a href="tema4.html">Tema 4</a></li>
+              <li><a href="tema5.html">Tema 5</a></li>
+            </ul>
+          </li>
+          <li><a href="kontakt.html">KONTAKT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main_projekter">
+      <h1>TEMA 4</h1>
+      <h3>GRUNDLÆGGENDE BRUGERGRÆNSEFLADEUDVIKLING</h3>
+
+      <div class="grid_1">
+        <div>
+          <p>I dette tema arbejdede vi med udvikling af brugergrænseflader til et eksisterende website. Fokus var på at videreudvikle sitets design og funktionalitet ved hjælp af værktøjer som Adobe Illustrator, CSS og JavaScript.</p>
+
+          <p>
+            Vi blev introduceret til Adobe Illustrator og lærte at arbejde med vektorgrafik i SVG-format, som kan anvendes direkte på websites. Derudover fik vi vores første erfaringer med JavaScript, som blev brugt til at skabe interaktive elementer
+            og funktioner på siden. Samtidig videreudviklede vi vores færdigheder inden for CSS og arbejdede med mere avancerede metoder til styling og layout.
+          </p>
+        </div>
+      </div>
+      <div class="grid_1-1">
+        <div>
+          <h3>Opgave: Emergency site</h3>
+
+          <p>
+            I denne opgave skulle vi videreudvikle et såkaldt Emergency Site, hvor det grundlæggende website allerede var opbygget. Vi skulle selv vælge en nødsituation og designe sitet, så brugergrænsefladen understøttede situationens alvor og
+            formål.
+          </p>
+        </div>
+
+        <div>
+          <h3>Samspil mellem design og funktionalitet</h3>
+          <p>
+            Arbejdet bestod af en række delopgaver med fokus på forskellige elementer af sitet. Her skulle vi både udvikle visuelle komponenter og implementere funktionalitet ved hjælp af CSS og JavaScript. Opgaven gav os mulighed for at
+            eksperimentere med design, vektorgrafik og interaktive løsninger, samtidig med at vi lærte nye teknologier inden for webudvikling.
+          </p>
+          <p>Formålet med projektet var at styrke vores forståelse af samspillet mellem design og funktionalitet samt at give os praktisk erfaring med udvikling af brugergrænseflader til web.</p>
+        </div>
+      </div>
+      <div class="grid_1-1">
+        <div>
+          <h3>Emne</h3>
+          <p>Jeg valgte emnet “Hjælp jeg har for meget i køleskabet.</p>
+          <h3>Fokus</h3>
+          <ul class="koncept-li">
+            <li>Sætte fokus på madspild</li>
+            <li>Lave lidt sjov med at det er et luksus-problem/first world problem</li>
+            <li>Fokus på den materielle verden vi lever i</li>
+          </ul>
+        </div>
+        <div>
+          <img src="img/mindmap-emergenzy.png" alt="" class="billede-projekter" />
+        </div>
+      </div>
+      <div class="grid_1-1">
+        <div>
+          <h3>Infografik</h3>
+          <p>Vi skulle starte med at lave inforgrafik i Illustrator og implementere det på vores site. Målet var at gøre illustrationerne interaktive med JavaScript.</p>
+          <h3>Se, duft, smag!</h3>
+          <p>Jeg udarbejdede en illustration til “se, duft, smag”-reglen, som hjælper brugeren med at vurdere, om en fødevare stadig er egnet til brug, selv efter at “bedst før”-datoen er overskredet.</p>
+          <p>I idéfasen indsamlede jeg visuel inspiration fra billeder af øjne, næser og munde. Herefter tegnede jeg de tre elementer i frihånd i Adobe Illustrator.</p>
+        </div>
+        <div>
+          <img src="SVG/sanser.svg" alt="sanser" class="billede-projekter" />
+          <figcaption>Illustration "Se, duft, smag!"</figcaption>
+        </div>
+      </div>
+      <div class="grid_1-1">
+        <div>
+          <img src="img/sanser-impl.jpg" alt="" />
+          <h3>Infografik</h3>
+          <p>Her ses illustrationen implementeret på forsiden. CTA-knappen fører brugeren videre til en underliggende side, hvor "se, duft, smag"-reglen bliver uddybet.</p>
+        </div>
+        <div>
+          <img src="img/javascript-sanser.png" alt="" class="billede-projekter" />
+          <figcaption>Illustration "Se, duft, smag!"</figcaption>
+          <p>Den er implementeret som en SVG.</p>
+          <p>
+            JavaScript-koden gør SVG-grafikken interaktiv. Når brugeren klikker på øjet, næsen eller munden, opdateres sidens indhold med relevant information. Derudover fremhæves de enkelte SVG-elementer ved hjælp af CSS-klassen highlight, når
+            brugeren holder musen over de tilhørende knapper.
+          </p>
+        </div>
+      </div>
+      <div class="grid_1-1">
+        <div>
+          <h3>Web-formular</h3>
+          <p>Vi skulle efterfølgende udvikle en webformular til vores emergency site.</p>
+          <p>Jeg valgte at lave en tilmeldingsformular til en skræddersyet madplan med det formål at hjælpe brugeren med at reducere madspild gennem bedre planlægning af indkøb og måltider.</p>
+          <img src="img/form.png" alt="Form" class="billede-projekter" />
+        </div>
+        <div>
+          <h3>Koden</h3>
+          <p>Formularen giver brugeren mulighed for at indtaste navn, e-mail og vælge en kostpræference for at modtage en madplan. HTML-koden opbygger formularens struktur med inputfelter, radio-knapper og en indsend-knap.</p>
+          <p>CSS-koden styler formularen ved at tilføje baggrundsfarver, typografi, afstand og centrering, så indholdet fremstår overskueligt og brugervenligt.</p>
+        </div>
+      </div>
+
+      <div class="grid_1-1">
+        <div>
+          <h3>Pop-over vindue</h3>
+          <p>Som en del af projektet skulle vi kode et pop-up-vindue til forsiden, der præsenterede nyheder relateret til vores emergency-site.</p>
+          <p>Til indholdet genererede jeg billeder ved hjælp af AI. Gennem forskellige prompts arbejdede jeg mig frem til et visuelt udtryk, der harmonerede med mine egne illustrationer, så designet fremstod sammenhængende og genkendeligt.</p>
+        </div>
+        <div>
+          <h3>Koden</h3>
+          <p>Koden opretter et interaktivt nyhedskort med et popover-vindue. Når brugeren klikker på "Læs mere", åbnes en popover med uddybende information, billeder og et link til en ekstern hjemmeside.</p>
+          <p>CSS-koden styrer popoverens størrelse, placering og udseende samt tilføjer en fade-in animation og en mørk baggrund, der fremhæver indholdet, mens popoveren er åben.</p>
+          <img src="img/popover.png" alt="popover" class="billede-projekter" />
+        </div>
+      </div>
+
+      <div class="grid_1-1">
+        <div>
+          <h1>Løsning</h1>
+          <p>Her kan du se min færdige løsning:</p>
+          <a href="https://vito-ek.github.io/Koleskab/" target="_blank"> Se projekt </a>
+        </div>
+        <div><img src="SVG/Asset 6.svg" alt="" /></div>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+    <footer>
+      <a href="kontakt.html">KONTAKT MIG</a>
+      <img src="SVG/cirkel.svg" alt="cirkel" class="cirkel" />
+    </footer>
+  </body>
+</html>
