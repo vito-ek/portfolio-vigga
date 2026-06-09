@@ -30,7 +30,7 @@
   text-align: center;
   color: #fef8e0;
   font-weight: 200;
-  font-size: clamp(0.5rem, 5vw, 3rem);
+  font-size: clamp(0.5rem, 5vw, 2rem);
 }
 
 .info-cta {
@@ -104,6 +104,25 @@
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
 }
 
+.projekter_a {
+  font-weight: 200;
+  font-size: 1em;
+  color: black;
+  text-decoration: none;
+  gap: 1rem;
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #ff6634;
+  border-radius: 20px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.projekter_a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
 /* formular */
 
 .kontakt-formular {
@@ -161,6 +180,10 @@
   font-weight: 500;
 }
 
+.portræt {
+  width: 300px;
+}
+
 /* TEMA 1,2,3,4,5 */
 
 .grid_1-1 {
@@ -205,6 +228,8 @@
   font-weight: 200;
   list-style: circle;
 }
+
+/* @media til desktop */
 
 @media (min-width: 1024px) {
   .main_projekter {
