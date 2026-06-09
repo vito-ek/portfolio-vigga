@@ -32,6 +32,12 @@
   font-weight: 200;
   font-size: clamp(0.5rem, 5vw, 2rem);
 }
+.hero-text2 {
+  text-align: center;
+  font-weight: 200;
+  font-size: clamp(0.5rem, 5vw, 1.5rem);
+  padding-bottom: 3rem;
+}
 
 .info-cta {
   text-decoration: none;
@@ -75,7 +81,7 @@
   padding: 0;
   margin: 0;
   gap: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 9rem;
   border-bottom: 1px solid black;
 }
 
@@ -225,7 +231,7 @@
 /* li CSS */
 
 .koncept-li {
-  font-weight: 200;
+  font-weight: 300;
   list-style: circle;
 }
 
