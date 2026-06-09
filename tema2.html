@@ -54,7 +54,7 @@
         <div>
           <h3>1. opgave: mobilsite</h3>
           <p>I denne opgave udviklede vi den første version af et website med fokus på struktur og opbygning. Vi skulle kode en grundlæggende hjemmeside med flere undersider og en navigationsmenu.</p>
-          <p>STil opgaven fik vi udleveret wireframes, layoutdiagrammer samt alt nødvendigt indhold i form af tekst og billeder. Derfor var fokus primært på at omsætte designet til kode og følge de udleverede retningslinjer så præcist som muligt.</p>
+          <p>Til opgaven fik vi udleveret wireframes, layoutdiagrammer samt alt nødvendigt indhold i form af tekst og billeder. Derfor var fokus primært på at omsætte designet til kode og følge de udleverede retningslinjer så præcist som muligt.</p>
           <p>
             Projektet gav en grundlæggende forståelse for HTML og CSS, mappestruktur samt samspillet mellem layoutdiagrammer, wireframes og den færdige webside. Samtidig fik vi erfaring med at opbygge responsive layouts og arbejde systematisk med
             webudvikling fra design til kode.
@@ -86,65 +86,54 @@
           </ul>
         </div>
       </div>
-
-      <div class="grid_1-2">
-        <div class="mobilversion">
-          <h3>Implementering af stats-sektionen</h3>
-          <p>For at præsentere nøgleinformationer på en overskuelig måde udviklede jeg en stats-sektion med CSS Grid. Formålet var at skabe et layout, hvor brugeren hurtigt kan afkode informationerne uden at blive overvældet af indhold.</p>
-          <img src="img/mobilsite.png" alt="Mobilsite" />
-          <figcaption>Index.html i mobil-version</figcaption>
-        </div>
-
+      <div class="grid_1-1">
         <div>
-          <div>
-            <img src="img/forside_com.png" alt="Forside" class="billede-projekter" />
-            <figcaption>Index.html i desktop-version</figcaption>
-          </div>
-          <div class="kode-billeder">
-            <figure>
-              <img src="img/html-kode-stats.png" alt="HTML-kode" />
-              <figcaption>HTML</figcaption>
-            </figure>
-
-            <figure>
-              <img src="img/css-kode-stats.png" alt="CSS-kode" />
-              <figcaption>CSS</figcaption>
-            </figure>
-          </div>
-          <p>
-            Her ses HTML- og CSS-koden for opsætningen af stats-sektionen. Jeg har placeret alle statistikkerne i en dl med klassen .dl_grid_1-1, som er sat op som et CSS Grid med to lige brede kolonner (1fr 1fr). Hver statistik er samlet i en div,
-            som indeholder både et dt (betegnelse) og et dd (værdi).
-          </p>
-          <p>Da dt og dd ligger i samme div, bliver de holdt samlet og placeret i den samme grid-celle. Resultatet er, at statistikkerne vises i et overskueligt layout med to kolonner, hvor hver betegnelse står over sin tilhørende værdi.</p>
-          <p>Derudover er der anvendt gap til at skabe afstand mellem elementerne, mens padding og margin bruges til at justere afstanden mellem overskrifter og værdier.</p>
+          <h3>Operativsystemer</h3>
+          <p>Her ses det udleverede wireframe til "Operativsystemer.html".</p>
+          <p>Vi skulle ud fra det finde frem til en løsning.</p>
         </div>
+        <div>
+          <img src="img/wireframe-opera.jpeg" alt="wireframe" class="billede-projekter" />
+          <figcaption></figcaption>
+        </div>
+        <div>
+          <h3>Løsning i CSS</h3>
+          <p>Jeg opbyggede sektionen med et overordnet grid på 5fr 3fr og anvendte derefter undergrids på 2fr 3fr og 3fr 2fr.</p>
+          <p>Dette gjorde jeg for at følge layoutdiagrammet og skabe en varieret, men struktureret opbygning af indholdet.</p>
+        </div>
+        <div><img src="img/opera-kode.jpeg" alt="opera-kode" class="billede-projekter" /></div>
+        <div>
+          <h3>Endelige løsning</h3>
+          <p>Her ses min endelige løsning i desktop-version.</p>
+          <p>Designet er responsivt ved hjælp af en @media-query, så grid'et ændrer sig til et 1fr-grid på mindre skærmstørrelser.</p>
+        </div>
+        <div><img src="img/opera.jpeg" alt="opera-web" class="billede-projekter" /></div>
       </div>
-      <div class="grid_1-2">
+
+      <div class="grid_1-1">
         <div>
-          <h3>Layout med CSS Grid</h3>
+          <h3>Komponenter</h3>
+          <p>Her ses det udleverede wireframe til "Komponenter.html".</p>
+          <p>Vi skulle også her finde frem til en løsning.</p>
+        </div>
+        <div>
+          <img src="img/komponenter-wireframe.jpeg" alt="wireframe" class="billede-projekter" />
+          <figcaption></figcaption>
+        </div>
+        <div>
+          <h3>Løsning i CSS</h3>
           <p>
-            I arbejdet med siden om operativsystemer tog jeg udgangspunkt i et udleveret layoutdiagram fra underviseren. Formålet var at omsætte det visuelle design til kode ved hjælp af CSS Grid og dermed genskabe den ønskede struktur og opbygning
-            så præcist som muligt.
+            En udfordring på denne side var at få billederne til at fylde hele kolonnen fra top til bund. Dette løste jeg ved at anvende Flexbox, som fordeler den tilgængelige plads mellem elementerne. Samtidig brugte jeg figure:last-child til at
+            målrette det sidste billede og tilpasse dets størrelse i forhold til resten af layoutet.
           </p>
-
-          <img src="img/wireframe-opera.jpeg" alt="Operativsystemer" class="billede-projekter" />
         </div>
-
+        <div><img src="img/komponenter-kode.jpeg" alt="komp-kode" class="billede-projekter" /></div>
         <div>
-          <img src="img/opera-web.png" alt="Operativsystemer" class="billede-projekter" />
-          <div class="kode-billeder">
-            <figure>
-              <img src="img/opera-kode-html.png" alt="HTML-kode" />
-              <figcaption>HTML</figcaption>
-            </figure>
-
-            <figure>
-              <img src="img/opera-kode-css.png" alt="CSS-kode" />
-              <figcaption>CSS</figcaption>
-            </figure>
-          </div>
-          <p>Jeg opbyggede sektionen med et overordnet grid på 5fr 3fr og anvendte derefter undergrids på 2fr 3fr og 3fr 2fr. Dette gjorde jeg for at følge layoutdiagrammet og skabe en varieret, men struktureret opbygning af indholdet.</p>
+          <h3>Endelige løsning</h3>
+          <p>Her ses min endelige løsning i desktop-version.</p>
+          <p>Designet er også responsivt her ved hjælp af en @media-query, så grid'et ændrer sig til et 1fr-grid på mindre skærmstørrelser.</p>
         </div>
+        <div><img src="img/komponenter.jpeg" alt="komp-web" class="billede-projekter" /></div>
       </div>
 
       <div class="grid_1-1">
