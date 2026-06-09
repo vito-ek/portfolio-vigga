@@ -55,7 +55,7 @@
   transition: 0.3s ease;
 }
 
-/* PROJEKTER */
+/* PROJEKTER intro */
 
 .projekter_intro {
   display: flex;
@@ -244,7 +244,7 @@
 
   .projekter {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 2rem;
   }
   .projekter img {
